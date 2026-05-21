@@ -60,7 +60,7 @@ export default function Skills() {
     <Section
       id="work"
       eyebrow="II — Skills"
-      title="What she works with"
+      title="What I work with"
     >
       <div className="mx-auto max-w-4xl">
         <dl className="divide-ink/15 border-ink/15 divide-y border-t border-b">

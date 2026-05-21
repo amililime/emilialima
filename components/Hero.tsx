@@ -8,7 +8,7 @@ export default function Hero() {
     >
       <Reveal>
         <p className="text-ink/60 mb-10 text-[10px] uppercase tracking-[0.4em] sm:mb-14 sm:text-xs">
-          Localization Engineer · Frontend Developer
+          Full Stack Developer
         </p>
       </Reveal>
 
@@ -21,8 +21,7 @@ export default function Hero() {
 
       <Reveal delay={280} className="mt-10 sm:mt-14">
         <p className="text-ink/80 mx-auto max-w-xl text-base leading-relaxed font-light sm:text-lg">
-          Localization engineer and frontend developer — bridging code,
-          language, and culture across 8 languages and four continents.
+          Python for backend. TypeScript for frontend. React, Next.js.
         </p>
       </Reveal>
 

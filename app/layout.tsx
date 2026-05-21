@@ -18,13 +18,13 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Emilia Lima — Localization Engineer & Frontend Developer",
+  title: "Emilia Lima — Full Stack Developer",
   description:
-    "Localization engineer and frontend developer bridging code, language, and culture across 8 languages and four continents.",
+    "Full stack developer. Python for backend, TypeScript for frontend. React, Next.js.",
   openGraph: {
-    title: "Emilia Lima — Localization Engineer & Frontend Developer",
+    title: "Emilia Lima — Full Stack Developer",
     description:
-      "Localization engineer and frontend developer bridging code, language, and culture across 8 languages and four continents.",
+      "Full stack developer. Python for backend, TypeScript for frontend. React, Next.js.",
     siteName: "Emilia Lima",
     type: "website",
   },

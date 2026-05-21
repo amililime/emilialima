@@ -11,24 +11,24 @@ export default function About() {
         <Reveal>
           <div className="space-y-8 text-base leading-[1.75] font-light sm:text-lg">
             <p>
-              She started in psychology, moved across continents, learned to
+              I started in psychology, moved across continents, learned to
               code, and ended up owning the multilingual web presence of a
               global SaaS company. Not a typical path. That&rsquo;s the point.
             </p>
             <p>
-              At NinjaOne in Berlin, she owns ninjaone.com end-to-end across 8+
+              At NinjaOne in Berlin, I own ninjaone.com end-to-end across 8+
               languages &mdash; frontend development, localization engineering,
-              multilingual QA, SEO, and Core Web Vitals. She onboards
-              developers, coordinates between Marketing, Product, Engineering,
-              and Sales, and bridges the gap between technical systems and
+              multilingual QA, SEO, and Core Web Vitals. I onboard
+              developers, coordinate between Marketing, Product, Engineering,
+              and Sales, and bridge the gap between technical systems and
               human language.
             </p>
             <p>
-              Spanish native. English C2. Portuguese C1. German B1. She tutors
+              Spanish native. English C2. Portuguese C1. German B1. I tutor
               language learners from migrant and refugee communities,
-              volunteers at Gezellig Sessions (a Berlin concert series for
-              emerging artists), and plays piano and guitar. She learns fast.
-              She communicates clearly. She ships.
+              volunteer at Gezellig Sessions (a Berlin concert series for
+              emerging artists), and play piano and guitar. I learn fast.
+              I communicate clearly. I ship.
             </p>
           </div>
         </Reveal>

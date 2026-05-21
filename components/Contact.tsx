@@ -28,9 +28,9 @@ export default function Contact() {
         </Reveal>
         <Reveal delay={120}>
           <p className="text-ink/75 mx-auto mt-8 max-w-xl text-base leading-relaxed font-light sm:text-lg">
-            Available for frontend, full-stack, and localization engineering
-            roles. Onsite · Hybrid · Remote. Based in Montevideo, open to
-            Berlin and beyond.
+            Available for full-stack roles &mdash; Python on the backend,
+            TypeScript on the frontend, React and Next.js. Onsite · Hybrid ·
+            Remote. Based in Montevideo, open to Berlin and beyond.
           </p>
         </Reveal>
 

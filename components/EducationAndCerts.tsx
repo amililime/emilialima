@@ -37,7 +37,7 @@ export default function EducationAndCerts() {
     <Section
       id="education"
       eyebrow="VI — Education & Credentials"
-      title="Where she studied"
+      title="Where I studied"
     >
       <div className="mx-auto grid max-w-5xl gap-16 md:grid-cols-2 md:gap-20">
         <Reveal>
