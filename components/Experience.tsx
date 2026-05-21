@@ -77,7 +77,7 @@ export default function Experience() {
             <article className="grid gap-6 py-10 sm:grid-cols-[140px_1fr] sm:gap-10 sm:py-12">
               <div className="text-ink/60 font-display text-base leading-tight sm:text-lg">
                 {job.span}
-                <div className="text-ink/50 font-body mt-2 text-[10px] uppercase tracking-[0.28em]">
+                <div className="text-ink/60 font-body mt-2 text-[10px] uppercase tracking-[0.28em]">
                   {job.location}
                 </div>
               </div>
@@ -98,7 +98,7 @@ export default function Experience() {
                           <h4 className="font-display text-lg font-normal italic sm:text-xl">
                             {r.title}
                           </h4>
-                          <span className="text-ink/55 text-[10px] uppercase tracking-[0.28em] sm:whitespace-nowrap">
+                          <span className="text-ink/60 text-[10px] uppercase tracking-[0.28em] sm:whitespace-nowrap">
                             {r.dates}
                           </span>
                         </div>

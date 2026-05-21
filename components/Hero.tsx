@@ -44,7 +44,7 @@ export default function Hero() {
       </Reveal>
 
       <Reveal delay={620} className="mt-24 sm:mt-32">
-        <div className="text-ink/40 flex flex-col items-center gap-3 text-[10px] uppercase tracking-[0.32em]">
+        <div className="text-ink/60 flex flex-col items-center gap-3 text-[10px] uppercase tracking-[0.32em]">
           <span>Scroll</span>
           <span aria-hidden="true" className="bg-ink/30 h-10 w-px" />
         </div>

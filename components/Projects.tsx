@@ -48,12 +48,12 @@ export default function Projects() {
           <Reveal key={p.title} delay={i * 60}>
             <article className="border-ink/15 border-t pt-10 sm:pt-12">
               <div className="mb-6 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-                <p className="text-ink/55 text-[10px] uppercase tracking-[0.28em]">
+                <p className="text-ink/60 text-[10px] uppercase tracking-[0.28em]">
                   {p.featured ? "Featured · " : ""}
                   {p.org} · {p.span}
                 </p>
                 {p.featured && (
-                  <span className="text-ink/40 text-[10px] uppercase tracking-[0.28em]">
+                  <span className="text-ink/60 text-[10px] uppercase tracking-[0.28em]">
                     No. {String(i + 1).padStart(2, "0")}
                   </span>
                 )}

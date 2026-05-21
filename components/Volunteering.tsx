@@ -34,14 +34,14 @@ export default function Volunteering() {
             <div className="grid gap-3 py-8 sm:grid-cols-[140px_1fr] sm:gap-10 sm:py-10">
               <div className="text-ink/60 font-display text-base sm:text-lg">
                 {it.span}
-                <div className="text-ink/50 font-body mt-2 text-[10px] uppercase tracking-[0.28em]">
+                <div className="text-ink/60 font-body mt-2 text-[10px] uppercase tracking-[0.28em]">
                   {it.location}
                 </div>
               </div>
               <div>
                 <h3 className="font-display text-xl leading-tight font-light sm:text-2xl">
                   {it.role}{" "}
-                  <span className="text-ink/50 italic">— {it.org}</span>
+                  <span className="text-ink/60 italic">— {it.org}</span>
                 </h3>
                 <p className="mt-3 text-base leading-relaxed font-light sm:text-[1.05rem]">
                   {it.body}

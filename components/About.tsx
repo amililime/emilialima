@@ -47,26 +47,26 @@ export default function About() {
                   Portrait
                 </div>
               </div>
-              <figcaption className="text-ink/50 mt-3 text-[10px] uppercase tracking-[0.28em]">
+              <figcaption className="text-ink/60 mt-3 text-[10px] uppercase tracking-[0.28em]">
                 Emilia Lima · Montevideo, 2026
               </figcaption>
             </figure>
 
             <dl className="space-y-5 text-sm font-light">
               <div className="border-ink/10 border-t pt-5">
-                <dt className="text-ink/50 mb-1 text-[10px] uppercase tracking-[0.28em]">
+                <dt className="text-ink/60 mb-1 text-[10px] uppercase tracking-[0.28em]">
                   Location
                 </dt>
                 <dd>Montevideo, Uruguay</dd>
               </div>
               <div className="border-ink/10 border-t pt-5">
-                <dt className="text-ink/50 mb-1 text-[10px] uppercase tracking-[0.28em]">
+                <dt className="text-ink/60 mb-1 text-[10px] uppercase tracking-[0.28em]">
                   Open to
                 </dt>
                 <dd>Onsite · Hybrid · Remote</dd>
               </div>
               <div className="border-ink/10 border-t pt-5">
-                <dt className="text-ink/50 mb-1 text-[10px] uppercase tracking-[0.28em]">
+                <dt className="text-ink/60 mb-1 text-[10px] uppercase tracking-[0.28em]">
                   Email
                 </dt>
                 <dd>
@@ -79,7 +79,7 @@ export default function About() {
                 </dd>
               </div>
               <div className="border-ink/10 border-t pt-5">
-                <dt className="text-ink/50 mb-1 text-[10px] uppercase tracking-[0.28em]">
+                <dt className="text-ink/60 mb-1 text-[10px] uppercase tracking-[0.28em]">
                   LinkedIn
                 </dt>
                 <dd>

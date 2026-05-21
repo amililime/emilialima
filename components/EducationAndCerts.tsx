@@ -52,14 +52,14 @@ export default function EducationAndCerts() {
                     <h4 className="font-display text-lg leading-tight font-normal sm:text-xl">
                       {e.program}
                     </h4>
-                    <span className="text-ink/55 text-[10px] uppercase tracking-[0.28em] whitespace-nowrap">
+                    <span className="text-ink/60 text-[10px] uppercase tracking-[0.28em] whitespace-nowrap">
                       {e.span}
                     </span>
                   </div>
                   <p className="text-ink/70 mt-2 text-sm font-light sm:text-base">
                     {e.org}
                     {e.note && (
-                      <span className="text-ink/50 italic"> ({e.note})</span>
+                      <span className="text-ink/60 italic"> ({e.note})</span>
                     )}
                   </p>
                 </li>
@@ -81,7 +81,7 @@ export default function EducationAndCerts() {
                       {c.name}
                     </h4>
                     {c.year && (
-                      <span className="text-ink/55 text-[10px] uppercase tracking-[0.28em] whitespace-nowrap">
+                      <span className="text-ink/60 text-[10px] uppercase tracking-[0.28em] whitespace-nowrap">
                         {c.year}
                       </span>
                     )}

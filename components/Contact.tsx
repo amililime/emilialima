@@ -74,7 +74,7 @@ export default function Contact() {
               />
             </div>
             <div className="flex items-center justify-between gap-4 pt-2">
-              <p className="text-ink/45 text-[10px] uppercase tracking-[0.28em]">
+              <p className="text-ink/60 text-[10px] uppercase tracking-[0.28em]">
                 Opens your mail client
               </p>
               <button
