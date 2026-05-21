@@ -37,7 +37,7 @@ export default function About() {
           <div className="space-y-10">
             <figure>
               <div
-                className="bg-ink/[0.04] border-ink/10 relative w-full overflow-hidden border"
+                className="bg-ink/4 border-ink/10 relative w-full overflow-hidden border"
                 style={{ aspectRatio: "3 / 4" }}
                 aria-label="Portrait of Emilia Lima"
               >
