@@ -1,6 +1,6 @@
 # emilialima
 
-Personal site of Emilia Lima — localization engineer and frontend developer.
+Personal site of Emilia Lima —  Fullstack Developer
 
 Live: _coming soon_
 
