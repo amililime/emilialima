@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <a
-        href="#top"
+        href="#main"
         className="bg-ink text-paper sr-only px-4 py-2 text-sm focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100"
       >
         Skip to content

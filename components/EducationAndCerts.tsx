@@ -3,19 +3,19 @@ import Section from "./Section";
 
 const education = [
   {
-    program: "Licentiate in Psychology",
+    program: "Licentiate degree",
     org: "Universidad de la República",
     span: "2019 — 2021",
     note: "partial — pivoted into tech",
   },
   {
-    program: "Data Science Semester",
-    org: "TechLabs Hamburg",
+    program: "Data Science Path",
+    org: "TechLabs Germany",
     span: "2023",
   },
   {
     program: "Front-End Development",
-    org: "Altimetrik",
+    org: "Altimetrik traineeship",
     span: "2023",
   },
 ];

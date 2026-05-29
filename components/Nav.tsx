@@ -8,9 +8,6 @@ const sections = [
   { id: "contact", label: "Contact" },
 ] as const;
 
-const cvHref =
-  "mailto:emilialimadacunha@gmail.com?subject=CV%20Request%20%E2%80%94%20Emilia%20Lima";
-
 export default function Nav() {
   const [active, setActive] = useState<string>("");
   const [condensed, setCondensed] = useState(false);
@@ -96,14 +93,6 @@ export default function Nav() {
               </li>
             );
           })}
-          <li className="hidden sm:block">
-            <a
-              href={cvHref}
-              className="border-ink/80 hover:bg-ink hover:text-paper inline-block border px-3 py-1.5 tracking-[0.22em] transition-colors"
-            >
-              Request CV
-            </a>
-          </li>
         </ul>
       </nav>
     </header>

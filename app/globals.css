@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme inline {
+@theme {
   --color-ink: #0a0a0a;
   --color-paper: #fafafa;
   --color-periwinkle: #acc5fe;
@@ -26,6 +26,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
 
 body {
   font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;

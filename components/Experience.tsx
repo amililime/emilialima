@@ -67,7 +67,7 @@ const jobs: Job[] = [
 export default function Experience() {
   return (
     <Section
-      id="experience"
+      id="work"
       eyebrow="III — Experience"
       title="A working chronology"
     >

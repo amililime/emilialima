@@ -35,7 +35,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
+    <html
+      lang="en"
+      className={`${cormorant.variable} ${dmSans.variable}`}
+    >
       <body className="bg-paper text-ink min-h-screen antialiased">
         {children}
       </body>

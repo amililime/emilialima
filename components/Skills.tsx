@@ -58,7 +58,7 @@ const groups: { title: string; items: string[] }[] = [
 export default function Skills() {
   return (
     <Section
-      id="work"
+      id="skills"
       eyebrow="II — Skills"
       title="What I work with"
     >

@@ -15,13 +15,13 @@ export default function Hero() {
       <Reveal delay={120}>
         <h1 className="font-display text-6xl font-light leading-[0.92] tracking-tight sm:text-[8rem] md:text-[10rem] lg:text-[12rem]">
           <span className="block">Emilia</span>
-          <span className="block italic">Lima</span>
+          <span className="block">Lima</span>
         </h1>
       </Reveal>
 
       <Reveal delay={280} className="mt-10 sm:mt-14">
         <p className="text-ink/80 mx-auto max-w-xl text-base leading-relaxed font-light sm:text-lg">
-          Python for backend. TypeScript for frontend. React, Next.js.
+          Typescript, React, Next.js, Node.js.
         </p>
       </Reveal>
 

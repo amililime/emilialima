@@ -1,8 +1,6 @@
+import Image from "next/image";
 import Reveal from "./Reveal";
 import Section from "./Section";
-
-const cvHref =
-  "mailto:emilialimadacunha@gmail.com?subject=CV%20Request%20%E2%80%94%20Emilia%20Lima";
 
 export default function About() {
   return (
@@ -11,24 +9,25 @@ export default function About() {
         <Reveal>
           <div className="space-y-8 text-base leading-[1.75] font-light sm:text-lg">
             <p>
-              I started in psychology, moved across continents, learned to
-              code, and ended up owning the multilingual web presence of a
-              global SaaS company. Not a typical path. That&rsquo;s the point.
+              I am a Software Developer who builds polished web experiences
+              where functionality and aesthetics carry equal weight. I see the
+              big picture, and the smallest of bugs — a detailed eye that lets
+              me QA thoroughly without losing sight of the whole. Through my
+              side projects, I help clients raise their standards by showcasing
+              the value of their work with the elegance it deserves.
+            </p>
+            <p>I lead with energy, discipline, and empathy.</p>
+            <p>
+              At NinjaOne in Berlin, I owned ninjaone.com end-to-end across 8+ languages, working across Marketing, Product, Engineering, Sales, and Success. Driving EMEA+ growth.
             </p>
             <p>
-              At NinjaOne in Berlin, I own ninjaone.com end-to-end across 8+
-              languages &mdash; frontend development, localization engineering,
-              multilingual QA, SEO, and Core Web Vitals. I onboard
-              developers, coordinate between Marketing, Product, Engineering,
-              and Sales, and bridge the gap between technical systems and
-              human language.
-            </p>
-            <p>
-              Spanish native. English C2. Portuguese C1. German B1. I tutor
-              language learners from migrant and refugee communities,
-              volunteer at Gezellig Sessions (a Berlin concert series for
-              emerging artists), and play piano and guitar. I learn fast.
-              I communicate clearly. I ship.
+             I speak several languages, both human and computer. I love solving &quot;impossible&quot; problems — whether about business, people, or tech.
+I learn from success, and I&apos;m not afraid of failure, it makes me sharper while it keeps me humble.
+              I am grateful to have the most amazing mentors, who shaped much more than just how I work.
+              I am strategic, I learn fast, I communicate clearly.
+             I&apos;m fascinated by the human brain — from behavioural science to neuroscience — and passionate about language, communication, and AI.
+                          When I&apos;m not programming, you&apos;ll find me running, bouldering, making music, or reading.
+
             </p>
           </div>
         </Reveal>
@@ -39,13 +38,15 @@ export default function About() {
               <div
                 className="bg-ink/4 border-ink/10 relative w-full overflow-hidden border"
                 style={{ aspectRatio: "3 / 4" }}
-                aria-label="Portrait of Emilia Lima"
               >
-                {/* Portrait placeholder — replace `src` with the provided portrait photo */}
-                {/* <Image src="/portrait.jpg" alt="Portrait of Emilia Lima" fill className="object-cover" priority /> */}
-                <div className="text-ink/30 absolute inset-0 flex items-center justify-center text-[10px] uppercase tracking-[0.28em]">
-                  Portrait
-                </div>
+                <Image
+                  src="/Emiliabluebackground.png"
+                  alt="Portrait of Emilia Lima"
+                  fill
+                  sizes="(min-width: 768px) 280px, 100vw"
+                  className="object-cover"
+                  priority
+                />
               </div>
               <figcaption className="text-ink/60 mt-3 text-[10px] uppercase tracking-[0.28em]">
                 Emilia Lima · Montevideo, 2026
@@ -94,13 +95,6 @@ export default function About() {
                 </dd>
               </div>
             </dl>
-
-            <a
-              href={cvHref}
-              className="border-ink hover:bg-ink hover:text-paper inline-block w-full border px-5 py-3 text-center text-[11px] uppercase tracking-[0.28em] transition-colors"
-            >
-              Request CV
-            </a>
           </div>
         </Reveal>
       </div>
