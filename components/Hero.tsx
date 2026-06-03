@@ -1,6 +1,10 @@
+"use client";
+
+import { useT } from "@/lib/i18n/LocaleProvider";
 import Reveal from "./Reveal";
 
 export default function Hero() {
+  const t = useT();
   return (
     <section
       id="top"
@@ -8,20 +12,20 @@ export default function Hero() {
     >
       <Reveal>
         <p className="text-ink/60 mb-10 text-[10px] uppercase tracking-[0.4em] sm:mb-14 sm:text-xs">
-          Full Stack Developer
+          {t.hero.eyebrow}
         </p>
       </Reveal>
 
       <Reveal delay={120}>
         <h1 className="font-display text-6xl font-light leading-[0.92] tracking-tight sm:text-[8rem] md:text-[10rem] lg:text-[12rem]">
-          <span className="block">Emilia</span>
-          <span className="block">Lima</span>
+          <span className="block">{t.hero.name1}</span>
+          <span className="block">{t.hero.name2}</span>
         </h1>
       </Reveal>
 
       <Reveal delay={280} className="mt-10 sm:mt-14">
         <p className="text-ink/80 mx-auto max-w-xl text-base leading-relaxed font-light sm:text-lg">
-          Typescript, React, Next.js, Node.js.
+          {t.hero.subtitle}
         </p>
       </Reveal>
 
@@ -31,20 +35,20 @@ export default function Hero() {
             href="#work"
             className="border-ink hover:bg-ink hover:text-paper inline-flex items-center justify-center border px-7 py-3 text-[11px] uppercase tracking-[0.28em] transition-colors"
           >
-            View Work
+            {t.hero.viewWork}
           </a>
           <a
             href="#contact"
             className="hover:bg-ink/5 inline-flex items-center justify-center px-7 py-3 text-[11px] uppercase tracking-[0.28em] transition-colors"
           >
-            Get in Touch
+            {t.hero.getInTouch}
           </a>
         </div>
       </Reveal>
 
       <Reveal delay={620} className="mt-24 sm:mt-32">
         <div className="text-ink/60 flex flex-col items-center gap-3 text-[10px] uppercase tracking-[0.32em]">
-          <span>Scroll</span>
+          <span>{t.hero.scroll}</span>
           <span aria-hidden="true" className="bg-ink/30 h-10 w-px" />
         </div>
       </Reveal>

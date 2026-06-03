@@ -1,16 +1,22 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/lib/i18n/LocaleProvider";
+import LanguageSwitcher from "./LanguageSwitcher";
 
-const sections = [
-  { id: "about", label: "About" },
-  { id: "work", label: "Work" },
-  { id: "contact", label: "Contact" },
-] as const;
+const sectionIds = ["about", "work", "contact"] as const;
+type SectionId = (typeof sectionIds)[number];
 
 export default function Nav() {
+  const t = useT();
   const [active, setActive] = useState<string>("");
   const [condensed, setCondensed] = useState(false);
+
+  const sections: { id: SectionId; label: string }[] = [
+    { id: "about", label: t.nav.about },
+    { id: "work", label: t.nav.work },
+    { id: "contact", label: t.nav.contact },
+  ];
 
   useEffect(() => {
     const onScroll = () => setCondensed(window.scrollY > 24);
@@ -20,7 +26,7 @@ export default function Nav() {
   }, []);
 
   useEffect(() => {
-    const ids = sections.map((s) => s.id);
+    const ids = sectionIds.slice();
     const observers: IntersectionObserver[] = [];
     const visible = new Map<string, number>();
 
@@ -61,13 +67,13 @@ export default function Nav() {
       }`}
     >
       <nav
-        aria-label="Primary"
+        aria-label={t.nav.primary}
         className="mx-auto flex max-w-6xl items-center justify-between px-6 sm:px-10"
       >
         <a
           href="#top"
           className="font-display text-lg tracking-tight sm:text-xl"
-          aria-label="Emilia Lima — back to top"
+          aria-label={t.nav.backToTop}
         >
           Emilia Lima
         </a>
@@ -80,7 +86,7 @@ export default function Nav() {
                 <a
                   href={`#${s.id}`}
                   aria-current={isActive ? "true" : undefined}
-                  className="relative inline-block py-1 tracking-[0.22em] transition-opacity hover:opacity-60"
+                  className="relative inline-block py-1 tracking-eyebrow transition-opacity hover:opacity-60"
                 >
                   {s.label}
                   <span
@@ -93,6 +99,9 @@ export default function Nav() {
               </li>
             );
           })}
+          <li>
+            <LanguageSwitcher />
+          </li>
         </ul>
       </nav>
     </header>

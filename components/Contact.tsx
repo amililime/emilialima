@@ -1,17 +1,21 @@
 "use client";
 
 import { useState } from "react";
+import { useT } from "@/lib/i18n/LocaleProvider";
 import Reveal from "./Reveal";
 import Section from "./Section";
 
 export default function Contact() {
+  const t = useT();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Hello from ${name || "your site"}`);
+    const subject = encodeURIComponent(
+      `${t.contact.mailSubject} ${name || t.contact.fallbackName}`,
+    );
     const body = encodeURIComponent(
       `${message}\n\n—\n${name}${email ? ` · ${email}` : ""}`,
     );
@@ -19,16 +23,16 @@ export default function Contact() {
   };
 
   return (
-    <Section id="contact" eyebrow="VII — Contact">
+    <Section id="contact" eyebrow={t.contact.eyebrow}>
       <div className="mx-auto max-w-3xl text-center">
         <Reveal>
           <h2 className="font-display text-5xl leading-[0.95] font-light tracking-tight sm:text-7xl md:text-[7rem]">
-            Let&rsquo;s talk.
+            {t.contact.title}
           </h2>
         </Reveal>
         <Reveal delay={120}>
           <p className="text-ink/75 mx-auto mt-8 max-w-xl text-base leading-relaxed font-light sm:text-lg">
-            Available for full-stack roles &mdash; Onsite in Montevideo· Hybrid · Remote.
+            {t.contact.availability}
           </p>
         </Reveal>
 
@@ -39,7 +43,7 @@ export default function Contact() {
             noValidate
           >
             <Field
-              label="Name"
+              label={t.contact.nameLabel}
               id="contact-name"
               value={name}
               onChange={setName}
@@ -47,7 +51,7 @@ export default function Contact() {
               autoComplete="name"
             />
             <Field
-              label="Email"
+              label={t.contact.emailLabel}
               id="contact-email"
               value={email}
               onChange={setEmail}
@@ -60,7 +64,7 @@ export default function Contact() {
                 htmlFor="contact-message"
                 className="text-ink/60 mb-3 block text-[10px] uppercase tracking-[0.28em]"
               >
-                Message
+                {t.contact.messageLabel}
               </label>
               <textarea
                 id="contact-message"
@@ -73,13 +77,13 @@ export default function Contact() {
             </div>
             <div className="flex items-center justify-between gap-4 pt-2">
               <p className="text-ink/60 text-[10px] uppercase tracking-[0.28em]">
-                Opens your mail client
+                {t.contact.helper}
               </p>
               <button
                 type="submit"
                 className="border-ink hover:bg-ink hover:text-paper border px-8 py-3 text-[11px] uppercase tracking-[0.28em] transition-colors"
               >
-                Send
+                {t.contact.send}
               </button>
             </div>
           </form>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { LocaleProvider } from "@/lib/i18n/LocaleProvider";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -40,7 +41,7 @@ export default function RootLayout({
       className={`${cormorant.variable} ${dmSans.variable}`}
     >
       <body className="bg-paper text-ink min-h-screen antialiased">
-        {children}
+        <LocaleProvider>{children}</LocaleProvider>
       </body>
     </html>
   );

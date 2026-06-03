@@ -1,49 +1,24 @@
+"use client";
+
+import { useT } from "@/lib/i18n/LocaleProvider";
 import Reveal from "./Reveal";
 import Section from "./Section";
 
-const education = [
-  {
-    program: "Licentiate degree",
-    org: "Universidad de la República",
-    span: "2019 — 2021",
-    note: "partial — pivoted into tech",
-  },
-  {
-    program: "Data Science Path",
-    org: "TechLabs Germany",
-    span: "2023",
-  },
-  {
-    program: "Front-End Development",
-    org: "Altimetrik traineeship",
-    span: "2023",
-  },
-];
-
-const certifications = [
-  { name: "Back-End Development", org: "Meta · Coursera", year: "2020" },
-  { name: "Introduction to Databases", org: "Meta · Coursera", year: "2020" },
-  {
-    name: "Computational Thinking",
-    org: "U Michigan · Coursera",
-    year: "2020",
-  },
-  { name: "TEFL", org: "Cambridge", year: "" },
-  { name: "TESOL", org: "University of Arizona", year: "" },
-];
-
 export default function EducationAndCerts() {
+  const t = useT();
+  const education = t.education.education;
+  const certifications = t.education.certifications;
   return (
     <Section
       id="education"
-      eyebrow="VI — Education & Credentials"
-      title="Where I studied"
+      eyebrow={t.education.eyebrow}
+      title={t.education.title}
     >
       <div className="mx-auto grid max-w-5xl gap-16 md:grid-cols-2 md:gap-20">
         <Reveal>
           <div>
             <h3 className="text-ink/60 mb-8 text-[10px] uppercase tracking-[0.32em]">
-              Education
+              {t.education.educationHeading}
             </h3>
             <ul className="divide-ink/15 border-ink/15 divide-y border-t border-b">
               {education.map((e) => (
@@ -71,7 +46,7 @@ export default function EducationAndCerts() {
         <Reveal delay={120}>
           <div>
             <h3 className="text-ink/60 mb-8 text-[10px] uppercase tracking-[0.32em]">
-              Certifications
+              {t.education.certificationsHeading}
             </h3>
             <ul className="divide-ink/15 border-ink/15 divide-y border-t border-b">
               {certifications.map((c) => (

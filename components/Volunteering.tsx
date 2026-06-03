@@ -1,33 +1,18 @@
+"use client";
+
+import { useT } from "@/lib/i18n/LocaleProvider";
 import Reveal from "./Reveal";
 import Section from "./Section";
 
-const items = [
-  {
-    role: "Strategy & Operations",
-    org: "Gezellig Sessions",
-    location: "Berlin & Amsterdam",
-    span: "Ongoing",
-    body: "Concert series for new and emerging artists scaled from intimate living-room concerts to historic concert halls.",
-  },
-  {
-    role: "Language Tutor",
-    org: "The Poetry Project",
-    location: "Berlin",
-    span: "2024 — Present",
-    body: "Language acquisition support for migrants and refugees.",
-  },
-  {
-    role: "English Tutor",
-    org: "Confident English",
-    location: "Montevideo",
-    span: "2019 — 2022",
-    body: "Volunteer tutoring for children and low-income families.",
-  },
-];
-
 export default function Volunteering() {
+  const t = useT();
+  const items = t.volunteering.items;
   return (
-    <Section id="volunteering" eyebrow="V — Volunteering" title="Off the clock">
+    <Section
+      id="volunteering"
+      eyebrow={t.volunteering.eyebrow}
+      title={t.volunteering.title}
+    >
       <ol className="divide-ink/15 border-ink/15 mx-auto max-w-4xl divide-y border-t border-b">
         {items.map((it, i) => (
           <Reveal as="li" key={it.org + it.role} delay={i * 40}>
