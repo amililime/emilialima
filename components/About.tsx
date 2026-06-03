@@ -20,16 +20,13 @@ export default function About() {
 
         <Reveal delay={200}>
           <div className="space-y-10">
-            <figure>
-              <div
-                className="bg-ink/4 border-ink/10 relative w-full overflow-hidden border"
-                style={{ aspectRatio: "3 / 4" }}
-              >
+            <figure className="flex flex-col items-center">
+              <div className="relative aspect-square w-full max-w-[280px] overflow-hidden rounded-full">
                 <Image
-                  src="/Emiliabluebackground.png"
+                  src="/emilia.png"
                   alt={t.about.portraitAlt}
                   fill
-                  sizes="(min-width: 768px) 280px, 100vw"
+                  sizes="(min-width: 768px) 280px, 80vw"
                   className="object-cover"
                   priority
                 />

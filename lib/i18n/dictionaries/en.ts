@@ -23,10 +23,9 @@ const en: Dict = {
     eyebrow: "I — About",
     title: "A short biography",
     paragraphs: [
-      "I am a Software Developer who builds web experiences where functionality and aesthetics carry equal weight. I see the big picture, and the smallest of bugs — a detailed eye that lets me QA thoroughly without losing sight of the whole. Through my side projects, I help clients raise their standards by showcasing the value of their work with the elegance it deserves.",
-      "I lead with energy, discipline, and empathy.",
-      "At NinjaOne in Berlin, I owned ninjaone.com end-to-end across 8+ languages, working across Marketing, Product, Engineering, Sales, and Success. Driving EMEA+ growth.",
-      "I speak several languages, both human and computer. I love solving “impossible” problems — whether about business, people, or tech. I learn from success, and I'm not afraid of failure; it makes me sharper while it keeps me humble. I am grateful to have the most amazing mentors, who shaped much more than just how I work. I am strategic, I learn fast, I communicate clearly. I'm fascinated by the human brain — from behavioural science to neuroscience — and passionate about language, communication, and AI. When I'm not programming, you'll find me running, bouldering, making music, or reading.",
+      "I'm a software developer fascinated by what we can build with technology — curious, creative, and drawn to building bridges across cultures so that meaning actually lands.",
+      "I'm passionate about language, communication, and AI. I like solving complex problems, especially the ones deemed impossible.",
+      "When I'm not coding or building something, you'll find me bouldering, making music, or reading.",
     ],
     portraitAlt: "Portrait of Emilia Lima",
     portraitCaption: "Emilia Lima · Montevideo, 2026",

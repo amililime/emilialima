@@ -23,10 +23,9 @@ const ptBR: Dict = {
     eyebrow: "I — Sobre",
     title: "Uma breve biografia",
     paragraphs: [
-      "Sou desenvolvedora de software e construo experiências web em que funcionalidade e estética têm o mesmo peso. Enxergo o todo e também o menor dos bugs — um olhar atento que me permite fazer QA com profundidade sem perder a visão do conjunto. Pelos meus projetos paralelos, ajudo clientes a elevarem seu padrão, mostrando o valor do trabalho deles com a elegância que ele merece.",
-      "Lidero com energia, disciplina e empatia.",
-      "Na NinjaOne, em Berlim, conduzi o ninjaone.com de ponta a ponta em mais de 8 idiomas, atuando junto com Marketing, Produto, Engenharia, Vendas e Customer Success. Impulsionando o crescimento na EMEA+.",
-      "Falo várias línguas, humanas e de máquina. Adoro resolver problemas “impossíveis” — sejam de negócio, de pessoas ou de tecnologia. Aprendo com o sucesso e não tenho medo do fracasso: ele me deixa mais afiada e me mantém humilde. Sou grata pelos mentores incríveis que moldaram muito mais do que apenas a forma como eu trabalho. Sou estratégica, aprendo rápido, comunico com clareza. Sou fascinada pelo cérebro humano — da ciência do comportamento à neurociência — e apaixonada por linguagem, comunicação e IA. Quando não estou programando, me encontra correndo, escalando boulder, fazendo música ou lendo.",
+      "Sou desenvolvedora de software, fascinada pelo que conseguimos construir com tecnologia — curiosa, criativa e com vontade de criar pontes entre culturas para que o significado realmente chegue.",
+      "Sou apaixonada por linguagem, comunicação e IA. Gosto de resolver problemas complexos, especialmente os tidos como impossíveis.",
+      "Quando não estou programando ou construindo algo, me encontra escalando boulder, fazendo música ou lendo.",
     ],
     portraitAlt: "Retrato de Emilia Lima",
     portraitCaption: "Emilia Lima · Montevidéu, 2026",
