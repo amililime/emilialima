@@ -40,7 +40,6 @@ const ptBR: Dict = {
   skills: {
     eyebrow: "II — Habilidades",
     title: "Com o que eu trabalho",
-    moreOnGithub: "Mais em github.com/amililime",
     groups: [
       {
         title: "Desenvolvimento Frontend",

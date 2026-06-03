@@ -40,7 +40,6 @@ const es: Dict = {
   skills: {
     eyebrow: "II — Habilidades",
     title: "Con qué trabajo",
-    moreOnGithub: "Más en github.com/amililime",
     groups: [
       {
         title: "Desarrollo Frontend",

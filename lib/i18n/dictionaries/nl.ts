@@ -40,7 +40,6 @@ const nl: Dict = {
   skills: {
     eyebrow: "II — Vaardigheden",
     title: "Waar ik mee werk",
-    moreOnGithub: "Meer op github.com/amililime",
     groups: [
       {
         title: "Frontend-ontwikkeling",

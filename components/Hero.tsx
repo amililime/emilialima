@@ -17,7 +17,7 @@ export default function Hero() {
       </Reveal>
 
       <Reveal delay={120}>
-        <h1 className="font-display text-6xl font-light leading-[0.92] tracking-tight sm:text-[8rem] md:text-[10rem] lg:text-[12rem]">
+        <h1 className="[font-family:var(--font-dm-sans)] text-6xl font-extralight leading-[0.92] tracking-tight sm:text-[8rem] md:text-[10rem] lg:text-[12rem]">
           <span className="block">{t.hero.name1}</span>
           <span className="block">{t.hero.name2}</span>
         </h1>

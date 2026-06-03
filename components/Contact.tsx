@@ -90,39 +90,61 @@ export default function Contact() {
         </Reveal>
 
         <Reveal delay={360} className="mt-20">
-          <ul className="text-ink/75 flex flex-col items-center justify-center gap-3 text-sm sm:flex-row sm:gap-8 sm:text-base">
+          <ul className="flex items-center justify-center gap-8 sm:gap-10">
             <li>
               <a
-                className="hover:text-ink"
                 href="mailto:emilialimadacunha@gmail.com"
+                aria-label="emilialimadacunha@gmail.com"
+                className="text-ink/70 inline-flex transition-colors hover:text-[#ACC5FE]"
               >
-                emilialimadacunha@gmail.com
+                <svg
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                  <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                </svg>
               </a>
             </li>
-            <li aria-hidden="true" className="text-ink/30 hidden sm:block">
-              ·
-            </li>
             <li>
               <a
-                className="hover:text-ink"
                 href="https://www.linkedin.com/in/emilia-lima"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="linkedin.com/in/emilia-lima"
+                className="text-ink/70 inline-flex transition-colors hover:text-[#ACC5FE]"
               >
-                linkedin.com/in/emilia-lima
+                <svg
+                  viewBox="0 0 448 512"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                </svg>
               </a>
-            </li>
-            <li aria-hidden="true" className="text-ink/30 hidden sm:block">
-              ·
             </li>
             <li>
               <a
-                className="hover:text-ink"
                 href="https://github.com/amililime"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="github.com/amililime"
+                className="text-ink/70 inline-flex transition-colors hover:text-[#ACC5FE]"
               >
-                github.com/amililime
+                <svg
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M12 .5C5.73.5.67 5.56.67 11.83c0 5.02 3.25 9.27 7.76 10.77.57.1.78-.25.78-.55 0-.27-.01-1-.02-1.96-3.16.69-3.83-1.52-3.83-1.52-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.14.08 1.74 1.17 1.74 1.17 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.61 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 2.86-.38c.97 0 1.95.13 2.86.38 2.18-1.47 3.14-1.16 3.14-1.16.62 1.57.23 2.73.11 3.02.73.79 1.17 1.8 1.17 3.04 0 4.36-2.66 5.32-5.19 5.6.41.35.78 1.05.78 2.12 0 1.53-.01 2.76-.01 3.13 0 .3.21.66.79.55 4.51-1.5 7.76-5.75 7.76-10.77C23.33 5.56 18.27.5 12 .5z" />
+                </svg>
               </a>
             </li>
           </ul>

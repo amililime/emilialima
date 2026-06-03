@@ -93,7 +93,6 @@ export type Dict = {
     eyebrow: string;
     title: string;
     groups: SkillGroup[];
-    moreOnGithub: string;
   };
   experience: {
     eyebrow: string;
