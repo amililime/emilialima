@@ -20,14 +20,13 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Emilia Lima — Full Stack Developer",
-  description:
-    "Full stack developer. Python for backend, TypeScript for frontend. React, Next.js.",
+  description: "TypeScript, React, Next.js, Node.",
   openGraph: {
     title: "Emilia Lima — Full Stack Developer",
-    description:
-      "Full stack developer. Python for backend, TypeScript for frontend. React, Next.js.",
+    description: "TypeScript, React, Next.js, Node.",
     siteName: "Emilia Lima",
     type: "website",
+    images: [{ url: "/icon.svg", width: 512, height: 512, alt: "Emilia Lima" }],
   },
   robots: { index: true, follow: true },
 };
