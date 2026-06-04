@@ -19,14 +19,16 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Emilia Lima — Full Stack Developer",
-  description: "TypeScript, React, Next.js, Node.",
+  metadataBase: new URL("https://emilialima.com"),
+  title: "Emilia Lima — Full Stack Developer · TypeScript & React",
+  description:
+    "Full stack developer building web experiences in TypeScript, React, Next.js, and Node. Multilingual, detail-driven, based in Montevideo and working across EMEA.",
   openGraph: {
-    title: "Emilia Lima — Full Stack Developer",
-    description: "TypeScript, React, Next.js, Node.",
+    title: "Emilia Lima — Full Stack Developer · TypeScript & React",
+    description:
+      "Full stack developer building web experiences in TypeScript, React, Next.js, and Node. Multilingual, detail-driven, based in Montevideo and working across EMEA.",
     siteName: "Emilia Lima",
     type: "website",
-    images: [{ url: "/icon.svg", width: 512, height: 512, alt: "Emilia Lima" }],
   },
   robots: { index: true, follow: true },
 };
