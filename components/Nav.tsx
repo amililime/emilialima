@@ -68,17 +68,17 @@ export default function Nav() {
     >
       <nav
         aria-label={t.nav.primary}
-        className="mx-auto flex max-w-6xl items-center justify-between px-6 sm:px-10"
+        className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 sm:px-10"
       >
         <a
           href="#top"
-          className="font-display text-lg tracking-tight sm:text-xl"
+          className="font-display shrink-0 text-base tracking-tight sm:text-xl"
           aria-label={t.nav.backToTop}
         >
           Emilia Lima
         </a>
 
-        <ul className="flex items-center gap-6 text-[11px] uppercase sm:gap-10 sm:text-xs">
+        <ul className="flex items-center gap-3 text-[10px] uppercase sm:gap-10 sm:text-xs">
           {sections.map((s) => {
             const isActive = active === s.id;
             return (
