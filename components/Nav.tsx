@@ -86,7 +86,7 @@ export default function Nav() {
                 <a
                   href={`#${s.id}`}
                   aria-current={isActive ? "true" : undefined}
-                  className="relative inline-block py-1 tracking-eyebrow transition-opacity hover:opacity-60"
+                  className="relative inline-block py-1 tracking-[0.08em] transition-opacity hover:opacity-60 sm:tracking-eyebrow"
                 >
                   {s.label}
                   <span

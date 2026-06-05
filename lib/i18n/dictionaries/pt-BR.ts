@@ -5,7 +5,7 @@ const ptBR: Dict = {
   nav: {
     primary: "Principal",
     backToTop: "Emilia Lima — voltar ao topo",
-    about: "Sobre",
+    about: "Sobre mim",
     work: "Trabalho",
     contact: "Contato",
     language: "Idioma",
