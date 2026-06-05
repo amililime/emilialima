@@ -45,14 +45,14 @@ export default function LanguageSwitcher() {
         aria-expanded={open}
         aria-label={t.nav.language}
         onClick={() => setOpen((o) => !o)}
-        className={`relative inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 tracking-eyebrow transition-colors ${
+        className={`relative inline-flex items-center gap-1 rounded-full px-2 py-1 tracking-eyebrow transition-colors sm:gap-1.5 sm:px-2.5 ${
           open ? "bg-ink/5" : "hover:bg-ink/5"
         }`}
       >
         <span aria-hidden="true" className="text-base leading-none">
           {LOCALE_FLAGS[locale]}
         </span>
-        <span>{LOCALE_SHORT[locale]}</span>
+        <span className="hidden sm:inline">{LOCALE_SHORT[locale]}</span>
         <span
           aria-hidden="true"
           className={`text-ink/50 text-[8px] transition-transform duration-200 ${
