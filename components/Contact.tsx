@@ -5,21 +5,33 @@ import { useT } from "@/lib/i18n/LocaleProvider";
 import Reveal from "./Reveal";
 import Section from "./Section";
 
+type Status = "idle" | "sending" | "sent" | "error";
+
 export default function Contact() {
   const t = useT();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState<Status>("idle");
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const subject = encodeURIComponent(
-      `${t.contact.mailSubject} ${name || t.contact.fallbackName}`,
-    );
-    const body = encodeURIComponent(
-      `${message}\n\n—\n${name}${email ? ` · ${email}` : ""}`,
-    );
-    window.location.href = `mailto:emilialimadacunha@gmail.com?subject=${subject}&body=${body}`;
+    if (status === "sending") return;
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+      if (!res.ok) throw new Error("send failed");
+      setStatus("sent");
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -76,12 +88,22 @@ export default function Contact() {
               />
             </div>
             <div className="flex items-center justify-between gap-4 pt-2">
-              <p className="text-ink/60 text-[10px] uppercase tracking-[0.28em]">
-                {t.contact.helper}
+              <p
+                role={status === "error" ? "alert" : undefined}
+                aria-live="polite"
+                className={`text-[10px] uppercase tracking-[0.28em] ${
+                  status === "error" ? "text-ink" : "text-ink/60"
+                }`}
+              >
+                {status === "sending" && t.contact.sending}
+                {status === "sent" && t.contact.sent}
+                {status === "error" && t.contact.error}
+                {status === "idle" && t.contact.helper}
               </p>
               <button
                 type="submit"
-                className="border-ink hover:bg-ink hover:text-paper border px-8 py-3 text-[11px] uppercase tracking-[0.28em] transition-colors"
+                disabled={status === "sending"}
+                className="border-ink hover:bg-ink hover:text-paper border px-8 py-3 text-[11px] uppercase tracking-[0.28em] transition-colors disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent disabled:hover:text-ink"
               >
                 {t.contact.send}
               </button>

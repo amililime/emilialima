@@ -128,8 +128,9 @@ export type Dict = {
     messageLabel: string;
     helper: string;
     send: string;
-    mailSubject: string;
-    fallbackName: string;
+    sending: string;
+    sent: string;
+    error: string;
   };
   footer: {
     locations: string;
