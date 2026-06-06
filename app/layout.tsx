@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { LocaleProvider } from "@/lib/i18n/LocaleProvider";
 import "./globals.css";
 
@@ -43,6 +45,8 @@ export default function RootLayout({
     >
       <body className="bg-paper text-ink min-h-screen antialiased">
         <LocaleProvider>{children}</LocaleProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
