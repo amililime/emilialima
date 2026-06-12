@@ -66,7 +66,7 @@ export default function LanguageSwitcher() {
       <ul
         role="listbox"
         aria-label={t.nav.language}
-        aria-hidden={!open}
+        inert={!open}
         className={`bg-paper/95 absolute right-0 top-full z-50 mt-3 min-w-[180px] origin-top-right rounded-2xl p-1.5 text-[11px] uppercase tracking-eyebrow shadow-[0_12px_32px_-8px_rgba(10,10,10,0.18),0_4px_12px_-4px_rgba(10,10,10,0.08)] backdrop-blur-md transition-all duration-150 ease-out ${
           open
             ? "pointer-events-auto translate-y-0 scale-100 opacity-100"
