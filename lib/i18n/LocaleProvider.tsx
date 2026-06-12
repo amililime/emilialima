@@ -31,6 +31,7 @@ function detectFromNavigator(): Locale {
     if (tag.startsWith("es")) return "es";
     if (tag.startsWith("nl")) return "nl";
     if (tag.startsWith("de")) return "de";
+    if (tag.startsWith("ja") || tag.startsWith("jp")) return "jp";
     if (tag.startsWith("en")) return "en";
   }
   return DEFAULT_LOCALE;
@@ -57,6 +58,7 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
     }
     if (!resolved) resolved = detectFromNavigator();
     document.documentElement.lang = resolved;
+    document.documentElement.classList.toggle("font-jp", resolved === "jp");
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setLocaleState(resolved);
   }, []);
@@ -64,6 +66,7 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
   const setLocale = useCallback((l: Locale) => {
     setLocaleState(l);
     document.documentElement.lang = l;
+    document.documentElement.classList.toggle("font-jp", l === "jp");
     try {
       window.localStorage.setItem(STORAGE_KEY, l);
     } catch {

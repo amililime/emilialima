@@ -33,6 +33,10 @@ body {
   font-feature-settings: "kern", "liga", "calt";
 }
 
+html.font-jp {
+  --font-body: "Meiryo", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", sans-serif;
+}
+
 ::selection {
   background: #0a0a0a;
   color: #fafafa;

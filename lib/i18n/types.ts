@@ -1,4 +1,4 @@
-export const LOCALES = ["en", "es", "pt-BR", "nl", "de"] as const;
+export const LOCALES = ["en", "es", "pt-BR", "nl", "de", "jp"] as const;
 export type Locale = (typeof LOCALES)[number];
 
 export const LOCALE_LABELS: Record<Locale, string> = {
@@ -7,6 +7,7 @@ export const LOCALE_LABELS: Record<Locale, string> = {
   "pt-BR": "Português (BR)",
   nl: "Nederlands",
   de: "Deutsch",
+  jp: "日本語",
 };
 
 export const LOCALE_SHORT: Record<Locale, string> = {
@@ -15,6 +16,7 @@ export const LOCALE_SHORT: Record<Locale, string> = {
   "pt-BR": "PT",
   nl: "NL",
   de: "DE",
+  jp: "JP",
 };
 
 export const LOCALE_FLAGS: Record<Locale, string> = {
@@ -23,6 +25,7 @@ export const LOCALE_FLAGS: Record<Locale, string> = {
   "pt-BR": "🇧🇷",
   nl: "🇳🇱",
   de: "🇩🇪",
+  jp: "🇯🇵",
 };
 
 export type Role = { title: string; dates: string; body: string };

@@ -4,6 +4,7 @@ import es from "./es";
 import ptBR from "./pt-BR";
 import nl from "./nl";
 import de from "./de";
+import jp from "./jp";
 
 export const DICTIONARIES: Record<Locale, Dict> = {
   en,
@@ -11,4 +12,5 @@ export const DICTIONARIES: Record<Locale, Dict> = {
   "pt-BR": ptBR,
   nl,
   de,
+  jp,
 };
