@@ -28,7 +28,6 @@ const en: Dict = {
       "When I'm not coding or building something, you'll find me bouldering, making music, or reading.",
     ],
     portraitAlt: "Portrait of Emilia Lima",
-    portraitCaption: "Emilia Lima · Montevideo, 2026",
     fields: {
       location: { label: "Location", value: "Montevideo, Uruguay" },
       openTo: { label: "Open to", value: "Hybrid · Remote" },
@@ -42,11 +41,11 @@ const en: Dict = {
     groups: [
       {
         title: "Frontend Development",
-        items: ["HTML", "CSS", "JavaScript", "React", "REST APIs"],
+        items: ["HTML", "CSS", "TypeScript", "JavaScript", "React", "REST APIs"],
       },
       {
         title: "Web & CMS",
-        items: ["WordPress", "SEO", "Web Performance", "Core Web Vitals"],
+        items: ["WordPress", "Sanity", "SEO", "Web Performance", "Core Web Vitals"],
       },
       {
         title: "Localization Engineering",
@@ -54,13 +53,15 @@ const en: Dict = {
           "i18n",
           "Translation workflows",
           "LQA",
-          "Multilingual QA",
           "UI testing",
           "Release validation",
         ],
       },
       { title: "Data & Scripting", items: ["Python", "SQL (foundational)"] },
-      { title: "AI Tooling", items: ["Claude Code", "GenAI workflows"] },
+      {
+        title: "AI Tooling",
+        items: ["Agentic Engineering", "Claude and other AIs", "GenAI workflows"],
+      },
       {
         title: "Tools & Platforms",
         items: [
@@ -208,8 +209,6 @@ const en: Dict = {
       {
         program: "Licentiate degree",
         org: "Universidad de la República",
-        span: "2019 — 2021",
-        note: "partial — pivoted into tech",
       },
       {
         program: "Data Science Path",

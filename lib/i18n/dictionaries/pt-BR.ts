@@ -28,7 +28,6 @@ const ptBR: Dict = {
       "Quando não estou programando ou construindo algo, me encontra escalando boulder, fazendo música ou lendo.",
     ],
     portraitAlt: "Retrato de Emilia Lima",
-    portraitCaption: "Emilia Lima · Montevidéu, 2026",
     fields: {
       location: { label: "Localização", value: "Montevidéu, Uruguai" },
       openTo: { label: "Modalidade", value: "Híbrido · Remoto" },
@@ -42,11 +41,11 @@ const ptBR: Dict = {
     groups: [
       {
         title: "Desenvolvimento Frontend",
-        items: ["HTML", "CSS", "JavaScript", "React", "APIs REST"],
+        items: ["HTML", "CSS", "TypeScript", "JavaScript", "React", "APIs REST"],
       },
       {
         title: "Web e CMS",
-        items: ["WordPress", "SEO", "Performance web", "Core Web Vitals"],
+        items: ["WordPress", "Sanity", "SEO", "Performance web", "Core Web Vitals"],
       },
       {
         title: "Engenharia de localização",
@@ -54,7 +53,6 @@ const ptBR: Dict = {
           "i18n",
           "Fluxos de tradução",
           "LQA",
-          "QA multilíngue",
           "Testes de UI",
           "Validação de releases",
         ],
@@ -65,7 +63,7 @@ const ptBR: Dict = {
       },
       {
         title: "Ferramentas de IA",
-        items: ["Claude Code", "Fluxos GenAI"],
+        items: ["Agentic Engineering", "Claude e outras IAs", "Fluxos GenAI"],
       },
       {
         title: "Ferramentas e plataformas",
@@ -214,8 +212,6 @@ const ptBR: Dict = {
       {
         program: "Licenciatura",
         org: "Universidad de la República",
-        span: "2019 — 2021",
-        note: "parcial — migrei para a área de tecnologia",
       },
       {
         program: "Data Science Path",

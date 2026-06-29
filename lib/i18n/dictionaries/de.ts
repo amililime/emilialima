@@ -29,7 +29,6 @@ const de: Dict = {
       "Ich spreche mehrere Sprachen, menschliche und maschinelle. Ich liebe es, „unmögliche“ Probleme zu lösen — ob im Business, mit Menschen oder mit Technologie. Ich lerne aus Erfolgen und habe keine Angst vor Misserfolgen: sie machen mich schärfer und halten mich bescheiden. Ich bin dankbar für großartige Mentor:innen, die weit mehr geprägt haben als nur meine Arbeitsweise. Ich denke strategisch, lerne schnell und kommuniziere klar. Das menschliche Gehirn fasziniert mich — von Verhaltensforschung bis Neurowissenschaft — und ich brenne für Sprache, Kommunikation und KI. Wenn ich nicht programmiere, findet man mich beim Laufen, Bouldern, Musizieren oder Lesen.",
     ],
     portraitAlt: "Porträt von Emilia Lima",
-    portraitCaption: "Emilia Lima · Montevideo, 2026",
     fields: {
       location: { label: "Standort", value: "Montevideo, Uruguay" },
       openTo: { label: "Offen für", value: "Hybrid · Remote" },
@@ -43,11 +42,11 @@ const de: Dict = {
     groups: [
       {
         title: "Frontend-Entwicklung",
-        items: ["HTML", "CSS", "JavaScript", "React", "REST-APIs"],
+        items: ["HTML", "CSS", "TypeScript", "JavaScript", "React", "REST-APIs"],
       },
       {
         title: "Web & CMS",
-        items: ["WordPress", "SEO", "Web Performance", "Core Web Vitals"],
+        items: ["WordPress", "Sanity", "SEO", "Web Performance", "Core Web Vitals"],
       },
       {
         title: "Localization Engineering",
@@ -55,7 +54,6 @@ const de: Dict = {
           "i18n",
           "Übersetzungs-Workflows",
           "LQA",
-          "Mehrsprachiges QA",
           "UI-Tests",
           "Release-Validierung",
         ],
@@ -66,7 +64,7 @@ const de: Dict = {
       },
       {
         title: "KI-Tools",
-        items: ["Claude Code", "GenAI-Workflows"],
+        items: ["Agentic Engineering", "Claude und andere KIs", "GenAI-Workflows"],
       },
       {
         title: "Tools & Plattformen",
@@ -215,8 +213,6 @@ const de: Dict = {
       {
         program: "Lizenziatsstudium",
         org: "Universidad de la República",
-        span: "2019 — 2021",
-        note: "teilweise — Wechsel in die Tech-Branche",
       },
       {
         program: "Data Science Path",

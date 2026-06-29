@@ -54,7 +54,7 @@ export type Volunteer = {
 export type EducationItem = {
   program: string;
   org: string;
-  span: string;
+  span?: string;
   note?: string;
 };
 export type Certification = { name: string; org: string; year: string };
@@ -84,7 +84,6 @@ export type Dict = {
     title: string;
     paragraphs: string[];
     portraitAlt: string;
-    portraitCaption: string;
     fields: {
       location: { label: string; value: string };
       openTo: { label: string; value: string };

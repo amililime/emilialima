@@ -29,7 +29,6 @@ const nl: Dict = {
       "Ik spreek meerdere talen, menselijke en computertalen. Ik los graag “onmogelijke” problemen op — of het nu om business, mensen of techniek gaat. Ik leer van succes en ben niet bang voor falen: het maakt me scherper en houdt me bescheiden. Ik ben dankbaar voor de fantastische mentoren die veel meer hebben gevormd dan alleen mijn werk. Ik ben strategisch, leer snel en communiceer helder. Het menselijk brein fascineert me — van gedragswetenschap tot neurowetenschap — en ik ben gepassioneerd door taal, communicatie en AI. Als ik niet aan het programmeren ben, vind je me hardlopend, boulderend, muziek makend of lezend.",
     ],
     portraitAlt: "Portret van Emilia Lima",
-    portraitCaption: "Emilia Lima · Montevideo, 2026",
     fields: {
       location: { label: "Locatie", value: "Montevideo, Uruguay" },
       openTo: { label: "Open voor", value: "Hybride · Remote" },
@@ -43,11 +42,11 @@ const nl: Dict = {
     groups: [
       {
         title: "Frontend-ontwikkeling",
-        items: ["HTML", "CSS", "JavaScript", "React", "REST API's"],
+        items: ["HTML", "CSS", "TypeScript", "JavaScript", "React", "REST API's"],
       },
       {
         title: "Web & CMS",
-        items: ["WordPress", "SEO", "Web Performance", "Core Web Vitals"],
+        items: ["WordPress", "Sanity", "SEO", "Web Performance", "Core Web Vitals"],
       },
       {
         title: "Localization Engineering",
@@ -55,7 +54,6 @@ const nl: Dict = {
           "i18n",
           "Vertaalworkflows",
           "LQA",
-          "Meertalige QA",
           "UI-testen",
           "Release-validatie",
         ],
@@ -66,7 +64,7 @@ const nl: Dict = {
       },
       {
         title: "AI-tools",
-        items: ["Claude Code", "GenAI-workflows"],
+        items: ["Agentic Engineering", "Claude en andere AI's", "GenAI-workflows"],
       },
       {
         title: "Tools & platformen",
@@ -215,8 +213,6 @@ const nl: Dict = {
       {
         program: "Licentiaat",
         org: "Universidad de la República",
-        span: "2019 — 2021",
-        note: "deels — overgestapt naar tech",
       },
       {
         program: "Data Science Path",

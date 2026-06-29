@@ -31,9 +31,6 @@ export default function About() {
                   priority
                 />
               </div>
-              <figcaption className="text-ink/60 mt-3 text-[10px] uppercase tracking-[0.28em]">
-                {t.about.portraitCaption}
-              </figcaption>
             </figure>
 
             <dl className="space-y-5 text-sm font-light">

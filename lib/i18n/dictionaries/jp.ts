@@ -28,7 +28,6 @@ const jp: Dict = {
       "コードを書いていない時は、ボルダリングをしたり、音楽をつくったり、本を読んだりしています。",
     ],
     portraitAlt: "Emilia Lima のポートレート",
-    portraitCaption: "Emilia Lima · Montevideo, 2026",
     fields: {
       location: { label: "拠点", value: "Montevideo, Uruguay" },
       openTo: { label: "勤務形態", value: "ハイブリッド · リモート" },
@@ -42,11 +41,11 @@ const jp: Dict = {
     groups: [
       {
         title: "フロントエンド開発",
-        items: ["HTML", "CSS", "JavaScript", "React", "REST API"],
+        items: ["HTML", "CSS", "TypeScript", "JavaScript", "React", "REST API"],
       },
       {
         title: "Web & CMS",
-        items: ["WordPress", "SEO", "Web Performance", "Core Web Vitals"],
+        items: ["WordPress", "Sanity", "SEO", "Web Performance", "Core Web Vitals"],
       },
       {
         title: "ローカライゼーションエンジニアリング",
@@ -54,7 +53,6 @@ const jp: Dict = {
           "i18n",
           "翻訳ワークフロー",
           "LQA",
-          "多言語QA",
           "UIテスト",
           "リリース検証",
         ],
@@ -65,7 +63,7 @@ const jp: Dict = {
       },
       {
         title: "AIツール",
-        items: ["Claude Code", "GenAI ワークフロー"],
+        items: ["Agentic Engineering", "Claude などの AI", "GenAI ワークフロー"],
       },
       {
         title: "ツール & プラットフォーム",
@@ -214,8 +212,6 @@ const jp: Dict = {
       {
         program: "学士課程",
         org: "Universidad de la República",
-        span: "2019 — 2021",
-        note: "途中まで — テック業界へ転向",
       },
       {
         program: "Data Science Path",
